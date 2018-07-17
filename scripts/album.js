@@ -95,7 +95,7 @@ var findParentByClassName = function(element, targetClass) {
   } else {
     alert("No parent found.");
   }
-
+//
 };
 findParentByClassName(child, 'album-view');
 
