@@ -10,18 +10,16 @@
 };
 
  $(window).load(function() {
-   // #1
    if ($(window).height() > 950) {
        animatePoints();
   }
-  // #2
-     var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
 
-     // #3
-       $(window).scroll(function(event) {
-         // #4
-         if ($(window).scrollTop() >= scrollDistance) {
-             animatePoints();
+  var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
+
+
+  $(window).scroll(function(event) {
+      if ($(window).scrollTop() >= scrollDistance) {
+          animatePoints();
     }
   });
 });
