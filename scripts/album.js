@@ -313,4 +313,4 @@ $(document).ready(function() {
   $nextButton.click(nextSong);
   $playPauseButton.click(togglePlayFromPlayerbar);
 
-});
+}); 
