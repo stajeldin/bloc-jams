@@ -265,7 +265,7 @@ var previousSong = function() {
 };
 
 var trackIndex = function(album, song) {
-  return album.songs.indexOf(song);
+  return album.songs.indexOf(song); 
 };
 
 var togglePlayFromPlayerbar = function() {
@@ -313,4 +313,4 @@ $(document).ready(function() {
   $nextButton.click(nextSong);
   $playPauseButton.click(togglePlayFromPlayerbar);
 
-}); 
+});
