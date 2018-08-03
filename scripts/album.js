@@ -265,7 +265,7 @@ var previousSong = function() {
 };
 
 var trackIndex = function(album, song) {
-  return album.songs.indexOf(song); 
+  return album.songs.indexOf(song);
 };
 
 var togglePlayFromPlayerbar = function() {
@@ -287,7 +287,7 @@ var updatePlayerBarSong = function() {
   $('.currently-playing .artist-song-mobile').text(currentSongFromAlbum.title + " - " + currentAlbum.artist);
 
   $('.main-controls .play-pause').html(playerBarPauseButton);
-  setTotalTimeInPlayerBar(filterTimeCode(currentSongFromAlbum.duration));
+  setTotalTimeInPlayerBar(filterTimeCode(currentSongFromAlbum.duration)); //need to call for duration, not length
 };
 
 var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
